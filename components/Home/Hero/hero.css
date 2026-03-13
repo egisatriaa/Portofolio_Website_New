@@ -1,0 +1,28 @@
+.snake-border {
+    position: relative;
+    padding: 2px;
+    border-radius: 12px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 40%,
+        #8b5cf6 50%,
+        transparent 60%,
+        transparent 100%
+    );
+    background-size: 200% 200%;
+    animation: snakeMove 3s linear infinite;
+}
+
+.inner {
+    border-radius: inherit;
+}
+
+@keyframes snakeMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
