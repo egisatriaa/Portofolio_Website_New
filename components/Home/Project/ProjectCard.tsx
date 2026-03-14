@@ -28,7 +28,7 @@ const ProjectCard = ({ title, description, image, techStack, demoUrl, githubUrl 
         </div>
         {/* content container */}
         <div className='p-6'>
-            <h3 className='text-xl text-black dark:text-white font-semibold mb-2 group-hover:text-purple-500 transition-colors'>{title}</h3>
+            <h3 className='text-xl text-black dark:text-white font-semibold mb-2 group-hover:text-blue-500 transition-colors'>{title}</h3>
             <p className='text-gray-600 dark:text-gray-400 mb-4 line-clamp-2'>{description}</p>
             
             {/* tech stack */}

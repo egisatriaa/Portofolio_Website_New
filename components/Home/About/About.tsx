@@ -72,7 +72,7 @@ const About = () => {
                     <div className='grid grid-cols-2 lg:grid-cols-4 gap-6'>
                         {stats.map((stat)=>{
                             return <div key={stat.label} className='bg-gray-300 dark:bg-gray-800 shadow rounded-xl p-6 text-center'>
-                                <div className='text-3xl md:text-4xl font-bold text-purple-600 mb-2'>{stat.value}</div>
+                                <div className='text-3xl md:text-4xl font-bold text-blue-600 mb-2'>{stat.value}</div>
                                 <div className='text-sm text-muted-foreground'>{stat.label}</div>
                             </div>
                         })}
