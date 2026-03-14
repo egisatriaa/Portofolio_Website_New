@@ -1,11 +1,13 @@
+'use client';
 import SectionHeading from '@/components/Helper/SectionHeading';
 import { highlights, stats } from '@/data';
 import Image from 'next/image';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <div className="py-16 bg-gray-100 dark:bg-gray-900">
+        <div id="about" className="py-16 bg-gray-100 dark:bg-gray-900 overflow-hidden">
             {/* section heading */}
             <SectionHeading
                 title_1="About"
@@ -14,19 +16,31 @@ const About = () => {
             />
             <div className="grid w-[80%] mx-auto lg:grid-cols-2 gap-12 items-center">
                 {/* image */}
-                <div className="relative">
-                    <div className="aspect-square rounded-2xl overflow-hidden p-2">
+                <motion.div 
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    className="relative"
+                >
+                    <div className="aspect-square rounded-2xl overflow-hidden">
                         <Image
-                            src={'/images/user.jpg'}
+                            src={'/images/hero.png'}
                             alt="profile image"
                             width={700}
                             height={700}
-                            className="w-full h-full object-center rounded-xl"
+                            className="w-[78%] h-full object-center rounded-xl"
                         />
                     </div>
-                </div>
+                </motion.div>
                 {/* content */}
-                <div className="space-y-6">
+                <motion.div 
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    className="space-y-6"
+                >
                     <h3 className="text-2xl font-semibold">
                         Junior Full-Stack Web Developer
                     </h3>
@@ -65,10 +79,16 @@ const About = () => {
                             );
                         })}
                     </div>
-                </div>
+                </motion.div>
             </div>
                 {/* stats */}
-                <div className='mt-16 w-[80%] mx-auto'>
+                <motion.div 
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    className='mt-16 w-[80%] mx-auto'
+                >
                     <div className='grid grid-cols-2 lg:grid-cols-4 gap-6'>
                         {stats.map((stat)=>{
                             return <div key={stat.label} className='bg-gray-300 dark:bg-gray-800 shadow rounded-xl p-6 text-center'>
@@ -77,7 +97,7 @@ const About = () => {
                             </div>
                         })}
                     </div>
-                </div>
+                </motion.div>
         </div>
     );
 };

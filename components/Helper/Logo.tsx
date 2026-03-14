@@ -25,8 +25,8 @@ const Logo = () => {
                 height={60}
             />
 
-            <h1 className="sm:text-xl hidden sm:block md:text-2xl font-bold text-[#011f4b] dark:text-[#3789e8] whitespace-nowrap">
-                {`Portfolio`}
+            <h1 className="sm:text-md hidden sm:block md:text-lg font-bold text-[#011f4b] dark:text-[#3789e8] whitespace-nowrap">
+                {`PORTFOLIO`}
             </h1>
         </div>
     );

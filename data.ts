@@ -19,19 +19,19 @@ import {
     Terminal,
 } from 'lucide-react';
 
-import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
+import { FaGithub, FaInstagram, FaLinkedin, FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
 
 export const stats = [
     { label: 'Internship Experience', value: '4 Months' },
-    { label: 'Projects Completed', value: '10+' },
-    { label: 'Technologies Learned', value: '15+' },
-    { label: 'Bootcamp Progress', value: 'Ongoing' },
+    { label: 'Projects Completed', value: '30+' },
+    { label: 'Technologies Learned', value: '10+' },
+    { label: 'Average Score Bootcamp', value: '95+' },
 ];
 
 export const highlights = [
     {
         icon: MapPin,
-        text: 'Based in West Bandung Regency, West Java, Indonesia',
+        text: 'Based in Kabupaten Bandung Barat, Jawa Barat, Indonesia',
     },
     {
         icon: Briefcase,
@@ -82,27 +82,27 @@ export const contactInfo = [
     {
         icon: Mail,
         label: 'Email',
-        value: 'hello@johndoe.dev',
-        href: 'mailto:hello@johndoe.dev',
+        value: 'egi.satriadyw@gmail.com',
+        href: 'mailto:egi.satriadyw@gmail.com',
     },
     {
         icon: Phone,
         label: 'Phone',
-        value: '+1 (555) 123-4567',
-        href: 'tel:+15551234567',
+        value: '+62 831-4454-4243',
+        href: 'tel:+6283144544243',
     },
     {
         icon: MapPin,
         label: 'Location',
-        value: 'San Francisco, CA',
+        value: 'Kabupaten Bandung Barat, Jawa Barat, Indonesia',
         href: '#',
     },
 ];
 
 export const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
-    { icon: FaLinkedinIn, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: FaGithub, href: 'https://github.com/egisatriaa', label: 'GitHub' },
+    { icon: FaLinkedinIn, href: 'https://www.linkedin.com/in/egi-satria-dyw', label: 'LinkedIn' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/egidyw_/', label: 'Instagram' },
 ];
 
 export const experiences = [
@@ -169,58 +169,58 @@ export const footerSocialLinks = [
 
 export const projects = [
     {
-        title: 'E-Commerce Platform',
+        title: 'Nova Vault',
         description:
-            'A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.',
-        image: '/images/p1.jpg',
-        techStack: ['Next.js', 'TypeScript', 'Stripe', 'MongoDB'],
-        demoUrl: 'https://example.com',
-        githubUrl: 'https://github.com',
+            'E-wallet-based Financial Technology (FinTech) application focused on transaction integrity, security, and ACID compliance. The backend is built using Laravel 12.x with an architectural design that ensures the security of user balances and meets professional financial application standards.',
+        image: '/images/Nova.png',
+        techStack: ['Laravel','React.js', 'MySQL','Tailwind CSS'],
+        demoUrl: 'https://nova-vault-fintech-website.vercel.app/',
+        githubUrl: 'https://github.com/egisatriaa/Nova-Vault_Fintech_Website',
     },
     {
-        title: 'Task Management App',
+        title: 'The Sanctuary Bali Resort',
         description:
-            'Collaborative project management tool with real-time updates, Kanban boards, and team analytics.',
-        image: '/images/p2.jpg',
-        techStack: ['React', 'Node.js', 'Socket.io', 'PostgreSQL'],
-        demoUrl: 'https://example.com',
-        githubUrl: 'https://github.com',
+            'Website for The Sanctuary Bali Resort, a luxury resort located in Bali, Indonesia. The website is built using React and Next.js with Tailwind CSS for styling and PostgreSQL for the database.',
+        image: '/images/resort.png',
+        techStack: ['React.js', 'Tailwind CSS', 'Framer Motion'],
+        demoUrl: 'https://resorts-website.vercel.app/',
+        githubUrl: 'https://github.com/egisatriaa/resorts-website',
     },
     {
-        title: 'AI Content Generator',
+        title: 'Maison Naytes Atelier',
         description:
-            'GPT-powered content creation platform for marketers with templates and workflow automation.',
-        image: '/images/p3.jpg',
-        techStack: ['React', 'Python', 'OpenAI', 'FastAPI'],
-        demoUrl: 'https://example.com',
-        githubUrl: 'https://github.com',
+            'Website parfume Maison Naytes Atelier, a luxury brand perfume located in Bali, Indonesia. The website is built using React and Next.js with Tailwind CSS for styling and PostgreSQL for the database.',
+        image: '/images/Parfum.png',
+        techStack: ['React', 'Tailwind CSS', 'JavaScript'],
+        demoUrl: 'https://maison-naytes-atelier.vercel.app/',
+        githubUrl: 'https://github.com/egisatriaa/Maison-Naytes-Atelier',
     },
     {
-        title: 'Real Estate Platform',
+        title: 'Retaily Website',
         description:
-            'Property listing platform with virtual tours, mortgage calculator, and agent booking system.',
-        image: '/images/p4.jpg',
-        techStack: ['Vue.js', 'Node.js', 'MongoDB', 'Maps API'],
-        demoUrl: 'https://example.com',
-        githubUrl: 'https://github.com',
+            'Website Retaily, a company that sells some products located in Bandung, Indonesia. The website is built using React and Next.js with Tailwind CSS for styling, Laravel for backend and MySQL for the database.',
+        image: '/images/pos.png',
+        techStack: ['React', 'Tailwind CSS', 'Laravel', 'MySQL'],
+        demoUrl: 'https://fp-point-of-sales-front-end.vercel.app/',
+        githubUrl: 'https://github.com/egisatriaa/FP_Point-of-Sales_FrontEnd',
     },
     {
-        title: 'Fitness Tracker',
+        title: 'DiStreaming',
         description:
-            'Cross-platform mobile app for workout tracking, nutrition logging, and progress analytics.',
-        image: '/images/p5.jpg',
-        techStack: ['React Native', 'Firebase', 'Node.js', 'Charts'],
-        demoUrl: 'https://example.com',
-        githubUrl: 'https://github.com',
+            'Streaming platform for movies and tv shows. The website is built using React and Next.js with Tailwind CSS for styling, Laravel for backend and MySQL for the database.',
+        image: '/images/distreaming.png',
+        techStack: ['React.js', 'Tailwind CSS','Laravel', 'MySQL'],
+        demoUrl: 'https://fe-di-streaming-next.vercel.app/',
+        githubUrl: 'https://github.com/egisatriaa/FE_DiStreaming_Next',
     },
     {
-        title: 'Learning Management System',
+        title: 'My Market',
         description:
-            'Educational platform with video streaming, quizzes, progress tracking, and certificates.',
-        image: '/images/p6.jpg',
-        techStack: ['Next.js', 'Prisma', 'AWS S3', 'Stripe'],
-        demoUrl: 'https://example.com',
-        githubUrl: 'https://github.com',
+            'My Market is a web-based application for buying and selling products. The application is built using HTML, CSS, and JavaScript.',
+        image: '/images/mymarket.png',
+        techStack: ['HTML', 'CSS', 'JavaScript'],
+        demoUrl: 'https://mymarkett.netlify.app/',
+        githubUrl: 'https://github.com/egisatriaa/My-Market',
     },
 ];
 

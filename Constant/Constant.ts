@@ -8,20 +8,16 @@ export const Navlink = [
         href: '#about',
     },
     {
+        name: 'Experience',
+        href: '#experience',
+    },
+    {
         name: 'Skills',
         href: '#skills',
     },
     {
         name: 'Projects',
         href: '#projects',
-    },
-    {
-        name: 'Experience',
-        href: '#experience',
-    },
-    {
-        name: 'Testimonial',
-        href: '#testimonial',
     },
     {
         name: 'Contact',
