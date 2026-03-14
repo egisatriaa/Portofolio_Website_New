@@ -22,7 +22,18 @@ const MobileNav = ({ showNav, closeNavHandler }: Props) => {
             {/* nav link */}
             <div className={`text-white ${sidebarOpenClose} fixed justify-center flex flex-col h-full transform transition-all duration-500 delay-300 w-[80%] sm:w-[60%] bg-gray-200 space-y-6 z-1050 `}>
                 {Navlink.map((link, index) => (
-                    <Link key={index} href={link.href}>
+                    <Link 
+                        key={index} 
+                        href={link.href}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            const target = document.getElementById(link.href.replace('#', ''));
+                            if (target) {
+                                target.scrollIntoView({ behavior: 'smooth' });
+                            }
+                            closeNavHandler();
+                        }}
+                    >
                         <p className="w-fit text-[20px] sm:text-[30px] ml-12 border-b-[1.5px] pb-1 border-black text-black hover:text-yellow-500 dark:hover:text-yellow-200 transition-all duration-200 font-semibold">
                             {link.name}
                         </p>

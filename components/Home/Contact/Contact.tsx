@@ -4,23 +4,36 @@ import React from 'react';
 import { contactInfo, socialLinks } from '@/data';
 import { Send } from 'lucide-react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
     return (
-        <div id="contact" className="pt-16 pb-16 bg-[linear-gradient(109.6deg,rgba(121,203,202,1)_11.2%,rgba(119,161,211,1)_91.1%)] dark:bg-none dark:bg-[#151622]">
+        <div id="contact" className="pt-16 pb-16 bg-[linear-gradient(109.6deg,rgba(121,203,202,1)_11.2%,rgba(119,161,211,1)_91.1%)] dark:bg-none dark:bg-[#151622] overflow-hidden">
             {/* Using custom header matching the reference visual style */}
-            <div className="text-center mb-16">
+            <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.2 }}
+                className="text-center mb-16"
+            >
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                     Get In <span className="text-blue-600">Touch</span>
                 </h1>
                 <p className="text-gray-700 dark:text-gray-400 text-sm md:text-base max-w-2xl mx-auto px-4">
                     Have a project in mind or just want to say hi? I'd love to hear from you.
                 </p>
-            </div>
+            </motion.div>
 
             <div className="w-[90%] sm:w-[85%] md:w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
                 {/* Left Column: Contact Info */}
-                <div className="flex flex-col">
+                <motion.div 
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    className="flex flex-col"
+                >
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Let's talk</h2>
                     <p className="text-gray-700 dark:text-gray-400 mb-8 leading-relaxed">
                         I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
@@ -66,10 +79,16 @@ const Contact = () => {
                             })}
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Right Column: Contact Form */}
-                <div className="bg-white/80 backdrop-blur-sm dark:bg-[#1a1c29] shadow-xl dark:shadow-none p-8 rounded-2xl w-full">
+                <motion.div 
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    className="bg-white/80 backdrop-blur-sm dark:bg-[#1a1c29] shadow-xl dark:shadow-none p-8 rounded-2xl w-full"
+                >
                     <form className="space-y-6 flex flex-col h-full" onSubmit={(e) => e.preventDefault()}>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div className="flex flex-col gap-2">
@@ -128,7 +147,7 @@ const Contact = () => {
                             Send Message
                         </button>
                     </form>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

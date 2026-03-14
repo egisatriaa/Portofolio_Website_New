@@ -37,6 +37,13 @@ const Nav = ({ openNavHandler }: Props) => {
                         <Link
                             key={index}
                             href={link.href}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                const target = document.getElementById(link.href.replace('#', ''));
+                                if (target) {
+                                    target.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
                             className="text-black dark:text-white hover:text-yellow-500 dark:hover:text-yellow-200 transition-all duration-200 font-semibold"
                         >
                             <p>{link.name}</p>
@@ -46,7 +53,9 @@ const Nav = ({ openNavHandler }: Props) => {
                 {/* button CV & Theme Toggle */}
                 <div className="flex items-center justify-center space-x-4">
                     <a
-                        href="#_"
+                        href="https://drive.google.com/file/d/1Faa8Ld3_B9O5hXQ3LxHYpxG9L2lvW_TM/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="box-border relative z-20 inline-flex items-center justify-center w-auto px-6 sm:px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none"
                     >
                         <span className="relative z-20 flex items-center space-x-2 text-sm">
