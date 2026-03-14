@@ -26,7 +26,7 @@ const Logo = () => {
             />
 
             <h1 className="sm:text-xl hidden sm:block md:text-2xl font-bold text-[#011f4b] dark:text-[#3789e8] whitespace-nowrap">
-                {`<Dev/>`}
+                {`Portfolio`}
             </h1>
         </div>
     );

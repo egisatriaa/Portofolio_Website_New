@@ -32,7 +32,7 @@ const Nav = ({ openNavHandler }: Props) => {
                     <Logo />
                 </div>
                 {/* Navlink */}
-                <div className="hidden lg:flex items-center space-x-10">
+                <div className="hidden lg:flex items-center space-x-8">
                     {Navlink.map((link, index) => (
                         <Link
                             key={index}

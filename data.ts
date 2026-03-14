@@ -22,23 +22,29 @@ import {
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
 
 export const stats = [
-    { label: 'Years Experience', value: '5+' },
-    { label: 'Projects Completed', value: '50+' },
-    { label: 'Happy Clients', value: '30+' },
-    { label: 'Students Taught', value: '1000+' },
+    { label: 'Internship Experience', value: '4 Months' },
+    { label: 'Projects Completed', value: '10+' },
+    { label: 'Technologies Learned', value: '15+' },
+    { label: 'Bootcamp Progress', value: 'Ongoing' },
 ];
 
 export const highlights = [
     {
         icon: MapPin,
-        text: 'Based in Kabupaten Bandung Barat, Jawa Barat, Indonesia',
+        text: 'Based in West Bandung Regency, West Java, Indonesia',
     },
-    { icon: Briefcase, text: 'Open for freelance work' },
+    {
+        icon: Briefcase,
+        text: 'Open to Junior Web Developer opportunities',
+    },
     {
         icon: GraduationCap,
-        text: "Bachelor's Degree in Computer and Informatics Engineering from Politeknik Negeri Bandung",
+        text: "Bachelor's Degree in Computer and Informatics Engineering – Politeknik Negeri Bandung",
     },
-    { icon: Coffee, text: 'Passionate about continuous learning' },
+    {
+        icon: Coffee,
+        text: 'Passionate about continuous learning and building web applications',
+    },
 ];
 
 export const userReviewData = [
@@ -101,49 +107,56 @@ export const socialLinks = [
 
 export const experiences = [
     {
-        type: 'work',
-        title: 'Senior Full-Stack Developer',
-        company: 'TechCorp Inc.',
-        period: '2022 - Present',
+        type: 'education',
+        title: 'Full Stack Web Development Bootcamp',
+        company: 'dibimbing.id',
+        period: 'Aug 2025 – Present',
         description:
-            'Leading development of enterprise SaaS products. Mentoring junior developers and implementing best practices.',
-        technologies: ['React', 'Node.js', 'AWS', 'TypeScript'],
-    },
-    {
-        type: 'work',
-        title: 'Full-Stack Developer',
-        company: 'StartupXYZ',
-        period: '2020 - 2022',
-        description:
-            'Built and maintained multiple web applications. Collaborated with design team to implement responsive UIs.',
-        technologies: ['Vue.js', 'Python', 'PostgreSQL', 'Docker'],
+            'Participating in an intensive full-stack web development bootcamp focused on building modern web applications using Laravel, React.js, HTML, CSS, Tailwind CSS, JavaScript, and Git through hands-on projects.',
+        technologies: ['Laravel','React.js','HTML', 'CSS', 'Tailwind CSS', 'JavaScript', 'Git'],
     },
     {
         type: 'education',
-        title: 'Master of Computer Science',
-        company: 'Stanford University',
-        period: '2018 - 2020',
+        title: 'Fundamental Penetration Testing',
+        company: 'Coding Studio',
+        period: 'Sep 2025',
         description:
-            'Specialized in distributed systems and machine learning. Thesis on scalable microservices architecture.',
-        technologies: ['Research', 'AI/ML', 'Distributed Systems'],
-    },
-    {
-        type: 'work',
-        title: 'Junior Developer',
-        company: 'WebAgency Co.',
-        period: '2018 - 2020',
-        description:
-            'Developed client websites and e-commerce platforms. Gained experience in agile methodologies.',
-        technologies: ['JavaScript', 'PHP', 'MySQL', 'WordPress'],
+            'Learned practical vulnerability assessment techniques including XSS, SQL Injection, CSRF, and security testing using tools such as Burp Suite, OWASP ZAP, and Nmap.',
+        technologies: ['Burp Suite', 'OWASP ZAP', 'Nmap', 'Web Security'],
     },
     {
         type: 'education',
-        title: 'Bachelor of Computer Science',
-        company: 'UC Berkeley',
-        period: '2014 - 2018',
+        title: 'Fundamental Linux Command',
+        company: 'Coding Studio',
+        period: 'Sep 2025',
         description:
-            'Strong foundation in algorithms, data structures, and software engineering principles.',
-        technologies: ['Computer Science', 'Mathematics', 'Problem Solving'],
+            'Learned Linux terminal operations, file system navigation, process management, and shell scripting fundamentals for server and development environments.',
+        technologies: ['Linux', 'Shell', 'Terminal'],
+    },
+    {
+        type: 'education',
+        title: 'Bachelor of Computer and Informatics Engineering',
+        company: 'Politeknik Negeri Bandung',
+        period: 'Aug 2021 – Aug 2025',
+        description:
+            'Graduated with an Applied Bachelor’s Degree specializing in software engineering, databases, DevOps practices, blockchain development, and web application development.',
+        technologies: [
+            'Software Engineering',
+            'Database Systems',
+            'Machine Learning',
+            'DevOps',
+            'Computer Vision',
+            'Blockchain',
+        ],
+    },
+    {
+        type: 'work',
+        title: 'Fullstack Developer Intern',
+        company: 'PT Kharisma Indotech Pratama',
+        period: 'Jun 2024 – Oct 2024',
+        description:
+            'Developed features for a Time Tracker web application including automated time logging and task monitoring while integrating frontend and backend systems and optimizing database performance.',
+        technologies: ['JavaScript', 'Ruby', 'MySQL'],
     },
 ];
 
